@@ -60,8 +60,8 @@ export function Gallery({ items }: { items: GalleryItem[] }) {
           aria-modal="true"
         >
           <img
-            src={items[index].src}
-            alt={items[index].alt}
+            src={items[index]?.src}
+            alt={items[index]?.alt ?? ""}
             className="max-h-[85vh] max-w-full object-contain shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           />
