@@ -5,9 +5,13 @@ import m3 from "@/assets/MOSAICO_3.jpg.asset.json";
 import { WhatsAppLink } from "@/components/WhatsAppButton";
 
 const frames = [
-  { src: m2.url, alt: "Pôr do sol na Prainha de Ilha Solteira, às margens do Rio Paraná" },
-  { src: m1.url, alt: "Lazer em família junto à natureza em Ilha Solteira" },
-  { src: m3.url, alt: "Hospede-se às margens do Rio Paraná, em Ilha Solteira" },
+  {
+    src: m2.url,
+    alt: "Pôr do sol na Prainha de Ilha Solteira, às margens do Rio Paraná",
+    position: "22% 42%",
+  },
+  { src: m1.url, alt: "Lazer em família junto à natureza em Ilha Solteira", position: "50% 45%" },
+  { src: m3.url, alt: "Hospede-se às margens do Rio Paraná, em Ilha Solteira", position: "45% 40%" },
 ];
 
 export function Hero() {
@@ -31,11 +35,16 @@ export function Hero() {
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[2000ms] ease-in-out ${
             active === i ? "opacity-100" : "opacity-0"
           }`}
-          style={{ transform: active === i ? "scale(1.04)" : "scale(1)", transition: "opacity 2s ease-in-out, transform 9s ease-out" }}
+          style={{
+            objectPosition: frame.position,
+            transform: active === i ? "scale(1.05)" : "scale(1)",
+            transition: "opacity 2s ease-in-out, transform 9s ease-out",
+          }}
         />
       ))}
 
-      <div className="absolute inset-0 bg-gradient-to-t from-river-deep/85 via-river-deep/25 to-river-deep/45" />
+      <div className="absolute inset-0 bg-gradient-to-t from-river-deep/90 via-river-deep/30 to-river-deep/55" />
+      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-river-deep/55 to-transparent" />
 
       <div className="relative mx-auto flex min-h-[100svh] max-w-[1220px] flex-col justify-end px-5 pb-20 pt-32 sm:px-8 sm:pb-24 lg:pb-28">
         <p className="eyebrow text-sun-soft">Pousada Rio e Sol</p>
