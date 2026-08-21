@@ -39,6 +39,15 @@ export function Footer() {
               {WHATSAPP_DISPLAY}
             </a>
           </p>
+          <p className="mt-1">
+            E-mail:{" "}
+            <a
+              href={`mailto:${EMAIL}`}
+              className="text-white underline decoration-sun decoration-2 underline-offset-4"
+            >
+              {EMAIL}
+            </a>
+          </p>
           <p className="mt-1">{DOMAIN}</p>
         </div>
 

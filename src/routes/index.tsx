@@ -455,6 +455,15 @@ function Home() {
                   {WHATSAPP_DISPLAY}
                 </a>
               </p>
+              <p className="mt-2 text-[1.02rem] text-river-deep">
+                E-mail:{" "}
+                <a
+                  href={`mailto:${EMAIL}`}
+                  className="font-semibold underline decoration-sun decoration-2 underline-offset-4"
+                >
+                  {EMAIL}
+                </a>
+              </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a
                   href={MAPS_URL}
