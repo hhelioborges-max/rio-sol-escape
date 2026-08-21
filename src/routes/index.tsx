@@ -24,7 +24,7 @@ import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 import { Gallery } from "@/components/Gallery";
 import { WhatsAppFloating, WhatsAppLink } from "@/components/WhatsAppButton";
-import { ADDRESS, MAPS_EMBED, MAPS_URL, WHATSAPP_DISPLAY, whatsappLink } from "@/lib/site";
+import { ADDRESS, EMAIL, MAPS_EMBED, MAPS_URL, WHATSAPP_DISPLAY, whatsappLink } from "@/lib/site";
 
 const TITLE = "Pousada Rio e Sol | Hospedagem em Ilha Solteira - SP";
 const DESCRIPTION =

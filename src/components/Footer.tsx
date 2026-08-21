@@ -1,5 +1,5 @@
 import logo from "@/assets/LOGO.jpg.asset.json";
-import { ADDRESS, DOMAIN, NAV, WHATSAPP_DISPLAY, whatsappLink } from "@/lib/site";
+import { ADDRESS, DOMAIN, EMAIL, NAV, WHATSAPP_DISPLAY, whatsappLink } from "@/lib/site";
 
 export function Footer() {
   return (
