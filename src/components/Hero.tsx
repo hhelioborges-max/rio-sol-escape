@@ -1,17 +1,15 @@
+import { IMG } from "@/lib/images";
 import { useEffect, useState } from "react";
-import m1 from "@/assets/MOSAICO_1.jpg.asset.json";
-import m2 from "@/assets/MOSAICO_2.jpg.asset.json";
-import m3 from "@/assets/MOSAICO_3.jpg.asset.json";
 import { WhatsAppLink } from "@/components/WhatsAppButton";
 
 const frames = [
   {
-    src: m2.url,
+    src: IMG.prainhaPorDoSol,
     alt: "Pôr do sol na Prainha de Ilha Solteira, às margens do Rio Paraná",
     position: "22% 42%",
   },
-  { src: m1.url, alt: "Lazer em família junto à natureza em Ilha Solteira", position: "50% 45%" },
-  { src: m3.url, alt: "Hospede-se às margens do Rio Paraná, em Ilha Solteira", position: "45% 40%" },
+  { src: IMG.rioNatureza, alt: "Lazer em família junto à natureza em Ilha Solteira", position: "50% 45%" },
+  { src: IMG.rioAnoitecer, alt: "Hospede-se às margens do Rio Paraná, em Ilha Solteira", position: "45% 40%" },
 ];
 
 export function Hero() {

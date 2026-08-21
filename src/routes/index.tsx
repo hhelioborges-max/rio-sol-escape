@@ -1,22 +1,6 @@
+import { IMG } from "@/lib/images";
 import { createFileRoute } from "@tanstack/react-router";
 
-import frente from "@/assets/FRENTE.jpg.asset.json";
-import patio from "@/assets/PATIO.jpg.asset.json";
-import patio2 from "@/assets/PATIO_2.jpg.asset.json";
-import camas from "@/assets/CAMAS.jpg.asset.json";
-import ar from "@/assets/AR_QUARTO.jpg.asset.json";
-import armario from "@/assets/ARMARIO.jpg.asset.json";
-import banheiro from "@/assets/BANHEIRO.jpg.asset.json";
-import frigobar from "@/assets/FRIGOBAR.jpg.asset.json";
-import pesca from "@/assets/PESCA.jpg.asset.json";
-import pesca2 from "@/assets/PESCA_2.jpg.asset.json";
-import pesca3 from "@/assets/PESCA_3.jpg.asset.json";
-import volei from "@/assets/VOLEI.jpg.asset.json";
-import basquete from "@/assets/BASQUETE.jpg.asset.json";
-import ilha from "@/assets/ILHA_SOLTEIRA.jpg.asset.json";
-import m1 from "@/assets/MOSAICO_1.jpg.asset.json";
-import m2 from "@/assets/MOSAICO_2.jpg.asset.json";
-import m3 from "@/assets/MOSAICO_3.jpg.asset.json";
 
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
@@ -40,11 +24,11 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
       { property: "og:locale", content: "pt_BR" },
-      { property: "og:image", content: m2.url },
+      { property: "og:image", content: IMG.prainhaPorDoSol },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: TITLE },
       { name: "twitter:description", content: DESCRIPTION },
-      { name: "twitter:image", content: m2.url },
+      { name: "twitter:image", content: IMG.prainhaPorDoSol },
     ],
     links: [{ rel: "canonical", href: "/" }],
     scripts: [
@@ -57,7 +41,7 @@ export const Route = createFileRoute("/")({
           description: DESCRIPTION,
           url: "https://pousadarioesol.com.br",
           telephone: "+5519998844848",
-          image: [m2.url, frente.url, patio.url],
+          image: [IMG.prainhaPorDoSol, IMG.fachada, IMG.patio],
           address: {
             "@type": "PostalAddress",
             streetAddress: "R. Praia do Forte, 31 - Portal da Praia",
@@ -84,27 +68,27 @@ const experiencias = [
     n: "01",
     title: "Rio Paraná",
     text: "Água, natureza e paisagens que fazem parte da identidade de Ilha Solteira.",
-    img: m1.url,
+    img: IMG.rioNatureza,
     alt: "Rio Paraná ao anoitecer em Ilha Solteira",
   },
   {
     n: "02",
     title: "Pesca",
     text: "Um destino conhecido por quem aprecia pesca e experiências ligadas ao rio.",
-    img: pesca3.url,
+    img: IMG.pescaRio,
     alt: "Pescador às margens do rio ao amanhecer",
   },
   {
     n: "03",
     title: "Família & descanso",
     text: "Dias mais tranquilos para aproveitar a cidade e criar bons momentos.",
-    img: volei.url,
+    img: IMG.volei,
     alt: "Vôlei de praia na Prainha de Ilha Solteira",
   },
 ];
 
 const quarto = {
-  img: camas.url,
+  img: IMG.camas,
   alt: "Quarto da Pousada Rio e Sol com duas camas",
   name: "Quarto Rio e Sol",
   desc: "Ambiente simples e bem cuidado, pensado para uma estadia tranquila em Ilha Solteira.",
@@ -112,24 +96,24 @@ const quarto = {
 };
 
 const detalhes = [
-  { img: ar.url, alt: "Ar-condicionado no quarto", label: "Ar-condicionado" },
-  { img: armario.url, alt: "Armário e TV no quarto", label: "Armário e TV" },
-  { img: frigobar.url, alt: "Frigobar no quarto", label: "Frigobar" },
-  { img: banheiro.url, alt: "Banheiro privativo do quarto", label: "Banheiro privativo" },
+  { img: IMG.arCondicionado, alt: "Ar-condicionado no quarto", label: "Ar-condicionado" },
+  { img: IMG.armario, alt: "Armário e TV no quarto", label: "Armário e TV" },
+  { img: IMG.frigobar, alt: "Frigobar no quarto", label: "Frigobar" },
+  { img: IMG.banheiro, alt: "Banheiro privativo do quarto", label: "Banheiro privativo" },
 ];
 
 const galeria = [
-  { src: frente.url, alt: "Fachada da Pousada Rio e Sol", span: "aspect-[4/5] lg:col-span-2 lg:aspect-[16/11]" },
-  { src: camas.url, alt: "Quarto com duas camas" },
-  { src: patio.url, alt: "Pátio interno da pousada" },
-  { src: m2.url, alt: "Pôr do sol na Prainha de Ilha Solteira" },
-  { src: pesca2.url, alt: "Dourado pescado no Rio Paraná" },
-  { src: banheiro.url, alt: "Armário e banheiro do quarto" },
-  { src: ilha.url, alt: "Portal de entrada das praias de Ilha Solteira" },
-  { src: patio2.url, alt: "Área interna com escada e jardim" },
-  { src: pesca.url, alt: "Pesca ao pôr do sol" },
-  { src: basquete.url, alt: "Basquete na Prainha de Ilha Solteira" },
-  { src: m3.url, alt: "Vista do Rio Paraná ao anoitecer" },
+  { src: IMG.fachada, alt: "Fachada da Pousada Rio e Sol", span: "aspect-[4/5] lg:col-span-2 lg:aspect-[16/11]" },
+  { src: IMG.camas, alt: "Quarto com duas camas" },
+  { src: IMG.patio, alt: "Pátio interno da pousada" },
+  { src: IMG.prainhaPorDoSol, alt: "Pôr do sol na Prainha de Ilha Solteira" },
+  { src: IMG.pescaDourado, alt: "Dourado pescado no Rio Paraná" },
+  { src: IMG.banheiro, alt: "Armário e banheiro do quarto" },
+  { src: IMG.portalIlha, alt: "Portal de entrada das praias de Ilha Solteira" },
+  { src: IMG.patio2, alt: "Área interna com escada e jardim" },
+  { src: IMG.pesca, alt: "Pesca ao pôr do sol" },
+  { src: IMG.basquete, alt: "Basquete na Prainha de Ilha Solteira" },
+  { src: IMG.rioAnoitecer, alt: "Vista do Rio Paraná ao anoitecer" },
 ];
 
 function SunWave({ className = "" }: { className?: string }) {
@@ -177,14 +161,14 @@ function Home() {
 
             <Reveal delay={120} className="relative">
               <img
-                src={frente.url}
+                src={IMG.fachada}
                 alt="Fachada da Pousada Rio e Sol, em Ilha Solteira"
                 loading="lazy"
                 decoding="async"
                 className="aspect-[4/5] w-full object-cover sm:aspect-[5/4] lg:aspect-[4/5]"
               />
               <img
-                src={patio.url}
+                src={IMG.patio}
                 alt="Pátio interno da Pousada Rio e Sol"
                 loading="lazy"
                 decoding="async"
@@ -261,7 +245,7 @@ function Home() {
         <section className="relative h-[78svh] overflow-hidden lg:h-[88svh]">
           <div
             className="absolute inset-0 bg-cover bg-center lg:bg-fixed"
-            style={{ backgroundImage: `url(${m3.url})` }}
+            style={{ backgroundImage: `url(${IMG.rioAnoitecer})` }}
             role="img"
             aria-label="Pôr do sol às margens do Rio Paraná, em Ilha Solteira"
           />
@@ -310,7 +294,7 @@ function Home() {
         <section className="bg-river-deep text-white">
           <div className="grid lg:grid-cols-2">
             <img
-              src={pesca2.url}
+              src={IMG.pescaDourado}
               alt="Pescador com dourado pescado no Rio Paraná"
               loading="lazy"
               decoding="async"
@@ -350,7 +334,7 @@ function Home() {
           <div className="mt-14 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             <Reveal className="sm:col-span-2">
               <img
-                src={m2.url}
+                src={IMG.prainhaPorDoSol}
                 alt="Pôr do sol na Prainha de Ilha Solteira"
                 loading="lazy"
                 decoding="async"
@@ -362,7 +346,7 @@ function Home() {
             </Reveal>
             <Reveal delay={100}>
               <img
-                src={ilha.url}
+                src={IMG.portalIlha}
                 alt="Portal de entrada das praias de Ilha Solteira"
                 loading="lazy"
                 decoding="async"
@@ -374,7 +358,7 @@ function Home() {
             </Reveal>
             <Reveal delay={60}>
               <img
-                src={basquete.url}
+                src={IMG.basquete}
                 alt="Basquete na Prainha de Ilha Solteira"
                 loading="lazy"
                 decoding="async"
@@ -386,7 +370,7 @@ function Home() {
             </Reveal>
             <Reveal delay={120} className="sm:col-span-2">
               <img
-                src={pesca.url}
+                src={IMG.pesca}
                 alt="Pesca ao pôr do sol em Ilha Solteira"
                 loading="lazy"
                 decoding="async"
@@ -492,7 +476,7 @@ function Home() {
         {/* CTA FINAL */}
         <section className="relative overflow-hidden">
           <img
-            src={m1.url}
+            src={IMG.rioNatureza}
             alt="Pôr do sol sobre o Rio Paraná em Ilha Solteira"
             loading="lazy"
             decoding="async"

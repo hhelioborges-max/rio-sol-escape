@@ -1,4 +1,4 @@
-import logo from "@/assets/LOGO.jpg.asset.json";
+import { IMG } from "@/lib/images";
 import { ADDRESS, DOMAIN, EMAIL, NAV, WHATSAPP_DISPLAY, whatsappLink } from "@/lib/site";
 
 export function Footer() {
@@ -7,7 +7,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-[1220px] gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[1.2fr_1fr_1fr] lg:py-20">
         <div>
           <img
-            src={logo.url}
+            src={IMG.logo}
             alt="Pousada Rio e Sol"
             width={72}
             height={72}

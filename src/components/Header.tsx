@@ -1,5 +1,5 @@
+import { IMG } from "@/lib/images";
 import { useEffect, useState } from "react";
-import logo from "@/assets/LOGO.jpg.asset.json";
 import { NAV } from "@/lib/site";
 import { WhatsAppLink } from "@/components/WhatsAppButton";
 
@@ -32,7 +32,7 @@ export function Header() {
       <div className="mx-auto flex max-w-[1220px] items-center justify-between px-5 sm:px-8">
         <a href="#top" className="flex items-center gap-3">
           <img
-            src={logo.url}
+            src={IMG.logo}
             alt="Pousada Rio e Sol"
             width={56}
             height={56}
