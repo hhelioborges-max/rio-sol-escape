@@ -1,5 +1,5 @@
 import logo from "@/assets/LOGO.jpg.asset.json";
-import { ADDRESS, DOMAIN, NAV, WHATSAPP_DISPLAY, whatsappLink } from "@/lib/site";
+import { ADDRESS, DOMAIN, EMAIL, NAV, WHATSAPP_DISPLAY, whatsappLink } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -37,6 +37,15 @@ export function Footer() {
               className="text-white underline decoration-sun decoration-2 underline-offset-4"
             >
               {WHATSAPP_DISPLAY}
+            </a>
+          </p>
+          <p className="mt-1">
+            E-mail:{" "}
+            <a
+              href={`mailto:${EMAIL}`}
+              className="text-white underline decoration-sun decoration-2 underline-offset-4"
+            >
+              {EMAIL}
             </a>
           </p>
           <p className="mt-1">{DOMAIN}</p>

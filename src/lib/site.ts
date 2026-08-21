@@ -3,6 +3,7 @@ export const WHATSAPP_MESSAGE =
 
 export const WHATSAPP_NUMBER = "5519998844848";
 export const WHATSAPP_DISPLAY = "(19) 99884-4848";
+export const EMAIL = "contato@pousadarioesol.com.br";
 
 export function whatsappLink(message: string = WHATSAPP_MESSAGE) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;

@@ -24,7 +24,7 @@ import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 import { Gallery } from "@/components/Gallery";
 import { WhatsAppFloating, WhatsAppLink } from "@/components/WhatsAppButton";
-import { ADDRESS, MAPS_EMBED, MAPS_URL, WHATSAPP_DISPLAY, whatsappLink } from "@/lib/site";
+import { ADDRESS, EMAIL, MAPS_EMBED, MAPS_URL, WHATSAPP_DISPLAY, whatsappLink } from "@/lib/site";
 
 const TITLE = "Pousada Rio e Sol | Hospedagem em Ilha Solteira - SP";
 const DESCRIPTION =
@@ -453,6 +453,15 @@ function Home() {
                   className="font-semibold underline decoration-sun decoration-2 underline-offset-4"
                 >
                   {WHATSAPP_DISPLAY}
+                </a>
+              </p>
+              <p className="mt-2 text-[1.02rem] text-river-deep">
+                E-mail:{" "}
+                <a
+                  href={`mailto:${EMAIL}`}
+                  className="font-semibold underline decoration-sun decoration-2 underline-offset-4"
+                >
+                  {EMAIL}
                 </a>
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
