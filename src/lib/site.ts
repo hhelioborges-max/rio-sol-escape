@@ -27,6 +27,7 @@ export const MAPS_EMBED =
   "&output=embed";
 
 export const DOMAIN = "pousadarioesol.com.br";
+export const SITE_URL = `https://${DOMAIN}`;
 
 export const NAV = [
   { label: "A Pousada", href: "#a-pousada" },

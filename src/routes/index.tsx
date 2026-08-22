@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 import { Gallery } from "@/components/Gallery";
 import { WhatsAppFloating, WhatsAppLink } from "@/components/WhatsAppButton";
-import { ADDRESS, EMAIL, MAPS_EMBED, MAPS_URL, WHATSAPP_DISPLAY, whatsappLink } from "@/lib/site";
+import { ADDRESS, EMAIL, SITE_URL, MAPS_EMBED, MAPS_URL, WHATSAPP_DISPLAY, whatsappLink } from "@/lib/site";
 
 const TITLE = "Pousada Rio e Sol | Hospedagem em Ilha Solteira - SP";
 const DESCRIPTION =
@@ -22,15 +22,15 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: SITE_URL + "/" },
       { property: "og:locale", content: "pt_BR" },
-      { property: "og:image", content: IMG.prainhaPorDoSol },
+      { property: "og:image", content: SITE_URL + IMG.prainhaPorDoSol },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: TITLE },
       { name: "twitter:description", content: DESCRIPTION },
-      { name: "twitter:image", content: IMG.prainhaPorDoSol },
+      { name: "twitter:image", content: SITE_URL + IMG.prainhaPorDoSol },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: SITE_URL + "/" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -41,7 +41,7 @@ export const Route = createFileRoute("/")({
           description: DESCRIPTION,
           url: "https://pousadarioesol.com.br",
           telephone: "+5519998844848",
-          image: [IMG.prainhaPorDoSol, IMG.fachada, IMG.patio],
+          image: [SITE_URL + IMG.prainhaPorDoSol, SITE_URL + IMG.fachada, SITE_URL + IMG.patio],
           address: {
             "@type": "PostalAddress",
             streetAddress: "R. Praia do Forte, 31 - Portal da Praia",
